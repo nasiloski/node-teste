@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "123" > teste.log'
-                sh 'mkdir /home/teste/'
-                sh 'cp -r * /home/teste/'
+                sh 'sudo yarn install'
+                sh 'sudo mkdir /home/teste/'
+                sh 'sudo cp -r * /home/teste/'
                 
             }
         }
